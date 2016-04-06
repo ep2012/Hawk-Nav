@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5beea01a-2b7b-4e7c-b4bc-072d1c681487++525",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5beea01a-2b7b-4e7c-b4bc-072d1c681487++525" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5beea01a-2b7b-4e7c-b4bc-072d1c681487++505" : 0,
+    "5beea01a-2b7b-4e7c-b4bc-072d1c681487++525" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BC0DA7DB-59B1-47BD-A667-2E6F3651D681",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5beea01a-2b7b-4e7c-b4bc-072d1c681487++505" : "trunk",
+    "5beea01a-2b7b-4e7c-b4bc-072d1c681487++525" : "dxb\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SampleAppExtendUI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "src\/public\/ios\/SampleAppExtendUI\/SampleAppExtendUI.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.20.1.252\/development",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5beea01a-2b7b-4e7c-b4bc-072d1c681487++505"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.20.1.252\/development",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5beea01a-2b7b-4e7c-b4bc-072d1c681487++525"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA7B5505-1517-4597-A86A-0C638BB6296E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SampleAppExtendUI</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5beea01a-2b7b-4e7c-b4bc-072d1c681487++505</key>
+		<string>https://10.20.1.252/development/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>src/public/ios/SampleAppExtendUI/SampleAppExtendUI.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5beea01a-2b7b-4e7c-b4bc-072d1c681487++505</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>5beea01a-2b7b-4e7c-b4bc-072d1c681487++505</key>
+		<string>https://10.20.1.252/development</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://10.20.1.252/development/trunk/src/public/ios/SampleAppExtendUI/SampleAppExtendUI.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5beea01a-2b7b-4e7c-b4bc-072d1c681487++505</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5beea01a-2b7b-4e7c-b4bc-072d1c681487++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>trunk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
