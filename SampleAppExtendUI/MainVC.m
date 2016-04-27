@@ -9,7 +9,11 @@
 #import "ViewController.h"
 @interface MainVC ()
 @property (weak, nonatomic) IBOutlet UITextField *txtDestination;
-- (IBAction)pressedGo:(UIButton *)sender;
+//- (IBAction)pressedGo:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *txtDestinationLat;
+
+@property (weak, nonatomic) IBOutlet UIButton *routeButton;
+
 
 @end
 
@@ -17,7 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
+    _routeButton.hidden = YES;
+}
+- (IBAction)pressedGo:(UIButton *)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:_txtDestination.text forKey:@"destLong"];
+    [userDefaults setObject:_txtDestinationLat.text forKey:@"destLat"];
+    
+    _routeButton.hidden = NO;
+    
+    // do any setup you need for myNewVC
 }
 
 - (void)didReceiveMemoryWarning {

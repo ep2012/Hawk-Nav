@@ -25,7 +25,8 @@
 #import "GMapViewController.h"
 
 @interface ViewController : GMapViewController
-@property (weak, nonatomic) IBOutlet GMSMapView *mapView3;
+
+@property GMSPolyline * _Null_unspecified polyline;
 
 @end
 

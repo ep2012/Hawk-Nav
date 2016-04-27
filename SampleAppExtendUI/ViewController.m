@@ -23,10 +23,10 @@
  ****************************************************************************/
 
 #import "ViewController.h"
+#import "SampleAppExtendUI-Swift.h"
 
 @interface ViewController () <OnExtendUpdateDelegate, OnMapPressDelegate>
-
-@property (weak, nonatomic) IBOutlet GMSMapView* mapView;
+@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
 
 
 @end
@@ -37,22 +37,159 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     [self setOnExtendUpdate:self];
     [self setOnMapPress:self];
     [self setAuthenticationKey:@"793e82a5c6bf11f43b65cc6ada893452"];
     [self setVicinityEnabled:true];
     [self setClarityEnabled:true];
-    _mapView.accessibilityElementsHidden = NO;
     
     CLLocationCoordinate2D position = CLLocationCoordinate2DMake(41.659578, -91.535682);
     GMSMarker *marker = [GMSMarker markerWithPosition:position];
     marker.title = @"Seamen Center";
     marker.map = _mapView;
+    marker.icon=[UIImage imageNamed:@"school1.png"];
     
     CLLocationCoordinate2D position1 = CLLocationCoordinate2DMake(41.661922, -91.536895);
     GMSMarker *marker1 = [GMSMarker markerWithPosition:position1];
     marker1.title = @"MacBride Hall";
     marker1.map = _mapView;
+    marker1.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position2 = CLLocationCoordinate2DMake(41.660687, -91.536439);
+    GMSMarker *marker2 = [GMSMarker markerWithPosition:position2];
+    marker2.title = @"MacLean Hall";
+    marker2.map = _mapView;
+    marker2.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position3 = CLLocationCoordinate2DMake(41.661801, -91.536418);
+    GMSMarker *marker3 = [GMSMarker markerWithPosition:position3];
+    marker3.title = @"Jessup Hall";
+    marker3.map = _mapView;
+    marker3.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position4 = CLLocationCoordinate2DMake(41.660711, -91.535527);
+    GMSMarker *marker4 = [GMSMarker markerWithPosition:position4];
+    marker4.title = @"Schaeffer Hall";
+    marker4.map = _mapView;
+    marker4.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position5 = CLLocationCoordinate2DMake(41.665320, -91.534969);
+    GMSMarker *marker5 = [GMSMarker markerWithPosition:position5];
+    marker5.title = @"Burge Hall";
+    marker5.map = _mapView;
+    marker5.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position6 = CLLocationCoordinate2DMake(41.666153, -91.534980);
+    GMSMarker *marker6 = [GMSMarker markerWithPosition:position6];
+    marker6.title = @"Currier Hall";
+    marker6.map = _mapView;
+    marker6.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position7 = CLLocationCoordinate2DMake(41.664486, -91.535012);
+    GMSMarker *marker7 = [GMSMarker markerWithPosition:position7];
+    marker7.title = @"Daum Hall";
+    marker7.map = _mapView;
+    marker7.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position8 = CLLocationCoordinate2DMake(41.659124, -91.542318);
+    GMSMarker *marker8 = [GMSMarker markerWithPosition:position8];
+    marker8.title = @"Hillcrest Hall";
+    marker8.map = _mapView;
+    marker8.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position9 = CLLocationCoordinate2DMake(41.676468, -91.531954);
+    GMSMarker *marker9 = [GMSMarker markerWithPosition:position9];
+    marker9.title = @"Mayflower Hall";
+    marker9.map = _mapView;
+    marker9.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position10 = CLLocationCoordinate2DMake(41.670674, -91.540570);
+    GMSMarker *marker10 = [GMSMarker markerWithPosition:position10];
+    marker10.title = @"Parklawn Hall";
+    marker10.map = _mapView;
+    marker10.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position11 = CLLocationCoordinate2DMake(41.659300, -91.544561);
+    GMSMarker *marker11 = [GMSMarker markerWithPosition:position11];
+    marker11.title = @"Quadrangle Hall";
+    marker11.map = _mapView;
+    marker11.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position12 = CLLocationCoordinate2DMake(41.658820, -91.543799);
+    GMSMarker *marker12 = [GMSMarker markerWithPosition:position12];
+    marker12.title = @"Peterson Hall";
+    marker12.map = _mapView;
+    marker12.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position13 = CLLocationCoordinate2DMake(41.658836, -91.544700);
+    GMSMarker *marker13 = [GMSMarker markerWithPosition:position13];
+    marker13.title = @"Rienow Hall";
+    marker13.map = _mapView;
+    marker13.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position14 = CLLocationCoordinate2DMake(41.658122, -91.545269);
+    GMSMarker *marker14 = [GMSMarker markerWithPosition:position14];
+    marker14.title = @"Slater Hall";
+    marker14.map = _mapView;
+    marker14.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position15 = CLLocationCoordinate2DMake(41.666466, -91.535752);
+    GMSMarker *marker15 = [GMSMarker markerWithPosition:position15];
+    marker15.title = @"Stanley Hall";
+    marker15.map = _mapView;
+    marker15.icon=[UIImage imageNamed:@"dorm1.png"];
+    
+    CLLocationCoordinate2D position16 = CLLocationCoordinate2DMake(41.661457, -91.536148);
+    GMSMarker *marker16 = [GMSMarker markerWithPosition:position16];
+    marker16.title = @"Old Capitol";
+    marker16.map = _mapView;
+    marker16.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position17 = CLLocationCoordinate2DMake(41.659517, -91.538585);
+    GMSMarker *marker17 = [GMSMarker markerWithPosition:position17];
+    marker17.title = @"Main Library";
+    marker17.map = _mapView;
+    marker17.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position18 = CLLocationCoordinate2DMake(41.659228, -91.537276);
+    GMSMarker *marker18 = [GMSMarker markerWithPosition:position18];
+    marker18.title = @"Communications Center";
+    marker18.map = _mapView;
+    marker18.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position19 = CLLocationCoordinate2DMake(41.658595, -91.537169);
+    GMSMarker *marker19 = [GMSMarker markerWithPosition:position19];
+    marker19.title = @"Lindquest Center";
+    marker19.map = _mapView;
+    marker19.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position20 = CLLocationCoordinate2DMake(41.660783, -91.539776);
+    GMSMarker *marker20 = [GMSMarker markerWithPosition:position20];
+    marker20.title = @"English Philosophy Building";
+    marker20.map = _mapView;
+    marker20.icon=[UIImage imageNamed:@"school1.png"];
+    
+    CLLocationCoordinate2D position21 = CLLocationCoordinate2DMake(41.662988, -91.536568);
+    GMSMarker *marker21 = [GMSMarker markerWithPosition:position21];
+    marker21.title = @"Calvin Hall";
+    marker21.map = _mapView;
+    marker21.icon=[UIImage imageNamed:@"school1.png"];
+    
+    /*GMSMutablePath *path = [GMSMutablePath new];
+     
+     [path addCoordinate:position];
+     [path addCoordinate:position2];
+     [path addCoordinate:position3];
+     */
+    
+    _mapView.myLocationEnabled = true;
+    
+    CLLocationCoordinate2D myLocation = _mapView.myLocation.coordinate;
+    
+    GoogleDataProvider *dataprovider = [GoogleDataProvider new];
+    
+    [dataprovider fetchDirectionsFrom2:myLocation to:position2];
     
 }
 
@@ -107,7 +244,7 @@
 
 -(void)onMapStoppedMoving
 {
-    [self scaleUserDotTo: 20.0];
+
 }
 
 -(void)onLogOut
@@ -157,12 +294,36 @@
 
 -(void)onTouchElement:(NSString *)name withIconFilename:(NSString *)iconFilename withLat:(double)lat withLon:(double)lon andFloor:(int)floor withObject:(id)object
 {
-    
+
 }
 
 -(void)onUserMovedMap
 {
     [self scaleUserDotTo: 19.0];
+    
+    if (_polyline.spans == 0x0)
+    {
+        GoogleDataProvider *dataprovider = [GoogleDataProvider new];
+        
+        CLLocationCoordinate2D position2 = CLLocationCoordinate2DMake(41.670674, -91.540570);
+        
+        NSString *destLong = [[NSUserDefaults standardUserDefaults] objectForKey:@"destLong"];
+        NSString *destLat = [[NSUserDefaults standardUserDefaults] objectForKey:@"destLat"];
+        
+        if (destLat != nil && destLong != nil)
+        {
+            position2 = CLLocationCoordinate2DMake( [destLat doubleValue], [destLong doubleValue]);
+        }
+        
+        [dataprovider fetchDirectionsFrom2:_mapView.myLocation.coordinate to:position2];
+        
+        NSString *route = [[NSUserDefaults standardUserDefaults] objectForKey:@"encodedRoute"];
+        
+        GMSPath *path = [GMSPath pathFromEncodedPath:route];
+        
+        _polyline = [GMSPolyline polylineWithPath:path];
+        _polyline.map = _mapView;
+    }
 }
 
 -(void)onMapChangedFloors:(NSString *)newFloorName withDirection:(int)direction
